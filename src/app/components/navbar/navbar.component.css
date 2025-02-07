@@ -1,0 +1,20 @@
+.navbar {
+    background-color: red; /* Red background */
+    color: white; /* White text */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Align Add Task to the left, Home to the right */
+    align-items: center;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  

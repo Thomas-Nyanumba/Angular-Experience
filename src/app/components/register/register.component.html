@@ -1,0 +1,35 @@
+<div class="register-form">
+    <h2>Register</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <label for="username">Username</label>
+      <input id="username" type="text" formControlName="username" placeholder="Enter your username">
+      <div *ngIf="registerForm.controls['username'].invalid && registerForm.controls['username'].touched">
+        <small *ngIf="registerForm.controls['username'].hasError('required')">Username is required.</small>
+        <small *ngIf="registerForm.controls['username'].hasError('minlength')">Username must be at least 4 characters.</small>
+      </div>
+  
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" placeholder="Enter your email">
+      <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched">
+        <small *ngIf="registerForm.controls['email'].hasError('required')">Email is required.</small>
+        <small *ngIf="registerForm.controls['email'].hasError('email')">Please enter a valid email.</small>
+      </div>
+  
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password" placeholder="Enter your password">
+      <div *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched">
+        <small *ngIf="registerForm.controls['password'].hasError('required')">Password is required.</small>
+        <small *ngIf="registerForm.controls['password'].hasError('minlength')">Password must be at least 6 characters.</small>
+      </div>
+  
+      <label for="confirmPassword">Confirm Password</label>
+      <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Confirm your password">
+      <div *ngIf="registerForm.controls['confirmPassword'].invalid && registerForm.controls['confirmPassword'].touched">
+        <small *ngIf="registerForm.controls['confirmPassword'].hasError('required')">Confirm password is required.</small>
+        <small *ngIf="registerForm.controls['confirmPassword'].hasError('minlength')">Confirm password must be at least 6 characters.</small>
+      </div>
+  
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+    </form>
+  </div>
+  

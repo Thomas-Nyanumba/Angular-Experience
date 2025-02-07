@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "4ea1",
+      "title": "Swimming",
+      "description": "Hobby",
+      "date": "2025-02-08",
+      "completed": false
+    },
+    {
+      "id": "9107",
+      "title": "Hiking",
+      "description": "Work it out.",
+      "date": "2025-02-11",
+      "completed": false
+    },
+    {
+      "id": "2e6e",
+      "title": "Running",
+      "description": "Get refreshed.",
+      "date": "2025-02-19",
+      "completed": false
+    },
+    {
+      "id": "0bb0",
+      "title": "Cooking",
+      "description": "Healthy living",
+      "date": "2025-02-21",
+      "completed": false
+    }
+  ]
+}

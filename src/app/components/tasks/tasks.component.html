@@ -1,0 +1,1 @@
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="taskDeleted(task)" (statusChanged)="updateTaskStatus(task)"></app-task-item>

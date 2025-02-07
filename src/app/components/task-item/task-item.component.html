@@ -1,0 +1,14 @@
+<div class="task-item" (click)="editTask()">
+    <div class="task-header">
+      <input type="checkbox" class="done-checkbox" [checked]="task.completed" (change)="toggleDone()">
+      <h3 class="task-title">{{ task.title }}</h3>
+      <button class="delete-btn" (click)="deleteTask($event)">
+        delete
+      </button>
+    </div>
+  
+    <div class="task-details">
+      <p class="task-due-date">Due: {{ task.date }}</p>
+      <p class="task-description">{{ task.description }}</p>
+    </div>
+  </div>
