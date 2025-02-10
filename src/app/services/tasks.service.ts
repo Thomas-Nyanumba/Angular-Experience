@@ -17,6 +17,9 @@ export class TasksService {
   // private backendUrl = 'http://172.16.8.24:8080/api/todos'
   private apiUrl = 'http://localhost:3000/tasks';
   constructor(private http: HttpClient) { }
+  getTaskById(taskId: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/${taskId}`);
+  }
 
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);

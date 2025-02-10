@@ -1,0 +1,67 @@
+.edit-task-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #0d47a1;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0d47a1;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #90caf9;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .save-btn {
+    background-color: #0d47a1;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #1565c0;
+  }
+  
+  .cancel-btn {
+    background-color: #90caf9;
+    color: #0d47a1;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #64b5f6;
+  }
+  

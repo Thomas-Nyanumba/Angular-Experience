@@ -1,0 +1,22 @@
+<div class="edit-task-container">
+    <h2>Edit Task</h2>
+    <form (submit)="saveChanges()">
+      <label for="title">Title</label>
+      <input id="title" type="text" [(ngModel)]="task.title" name="title"  required />
+  
+      <label for="description">Description</label>
+      <textarea id="description" [(ngModel)]="task.description" name="description" required></textarea>
+  
+      <label>Status</label>
+      <input type="checkbox" [(ngModel)]="task.completed" name="completed">
+  
+      <label for="date">Due Date</label>
+      <input id="date" type="date" [(ngModel)]="task.date" name="date" required />
+  
+      <div class="button-group">
+        <button type="submit" class="save-btn">Save</button>
+        <button type="button" class="cancel-btn" (click)="cancelEdit()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

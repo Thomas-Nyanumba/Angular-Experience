@@ -1,4 +1,4 @@
-<div class="task-item" (click)="editTask()">
+<div class="task-item" (dblclick)="editTask(task)">
     <div class="task-header">
       <input type="checkbox" class="done-checkbox" [checked]="task.completed" (change)="toggleDone()">
       <h3 class="task-title">{{ task.title }}</h3>

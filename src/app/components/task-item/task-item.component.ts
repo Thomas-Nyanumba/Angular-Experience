@@ -13,13 +13,15 @@ export class TaskItemComponent {
 
   constructor(private router: Router){}
   deleteTask(event: MouseEvent) {
-    console.log('delete task:', event);
     this.onDeleteTask.emit(this.task);
   }
   toggleDone() {
     this.task.completed = !this.task.completed 
     this.statusChanged.emit(this.task);
   }
-  editTask(){}
+  editTask(task: Task){
+    const taskId = task.id;
+    this.router.navigate(['/edit-task', taskId])
+  }
 
 }
